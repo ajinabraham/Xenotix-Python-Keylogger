@@ -1,9 +1,6 @@
 Xenotix-Python-Keylogger
 ========================
-Xenotix Python Keylogger for Windows\n
-Coder: Ajin Abraham 
-<ajin25@gmail.com>
-www.keralacyberforce.in
+Xenotix Python Keylogger for Windows
 
 usage:xenotix_python_logger.py mode
 mode:
