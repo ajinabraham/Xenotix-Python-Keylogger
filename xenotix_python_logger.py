@@ -2,7 +2,7 @@
 Xenotix Python Keylogger for Windows
 ====================================
 Coded By: Ajin Abraham <ajin25@gmail.com>
-Website: http://keralacyberforce.in/xenotix-python-keylogger-for-windows/
+Website: http://opensecurity.in/xenotix-python-keylogger-for-windows/
 GitHub: https://github.com/ajinabraham/Xenotix-Python-Keylogger
 
 FEATURES
