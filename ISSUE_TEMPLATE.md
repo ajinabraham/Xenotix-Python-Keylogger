@@ -1,0 +1,2 @@
+## IMPORTANT: PROJECT DEVELOPMENT AND SUPPORT IS DISCONTINUED
+There is no use in posting issues.
