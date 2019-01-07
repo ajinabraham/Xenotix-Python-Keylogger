@@ -1,5 +1,6 @@
 ## Xenotix Python Keylogger for Windows
 
+### IMPORTANT: PROJECT DEVELOPMENT AND SUPPORT IS DISCONTINUED
 - usage:
   - xenotix_python_logger.py **mode**  **[optional]**
 - mode:
